@@ -53,7 +53,7 @@ with shelve.open('tweeted-links.db', writeback=True) as myshelf:
     #print(p['entries'][0]['content'][0]['value'])
     body = None
     link = None
-    for entry in p['entries'][:6]:
+    for entry in p['entries'][:10]:
         body = entry['content'][0]['value']
         link = entry['link']
         if not link in myshelf:
