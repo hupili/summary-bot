@@ -3,4 +3,3 @@ requests
 feedparser
 jieba
 gensim
-shelve
