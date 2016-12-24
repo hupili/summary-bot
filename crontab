@@ -1,0 +1,1 @@
+5,35 * * * * cd /home/ubuntu/summary-bot && python3 bot.py 2>&1 >> log
