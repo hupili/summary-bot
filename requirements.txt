@@ -1,1 +1,6 @@
 python-twitter
+requests
+feedparser
+jieba
+gensim
+shelve
