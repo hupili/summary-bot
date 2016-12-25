@@ -6,11 +6,13 @@ import requests
 import feedparser
 import shelve
 
+import config
+
 api = twitter.Api(
-    consumer_key='wvPpgmIUxiWjZosM4jjrj4gmW',
-    consumer_secret='2sIY2ma1EHupsVyi9rzBTpCL1LJbAO8fO7oLx7WIW7UJKefUOo',
-    access_token_key='812608135223386113-Ah0Q80NLubsNPHYdY1iJpEzOZoKR2S2',
-    access_token_secret='E6FlbkwyU42wDbhp0uYw54ETWJtXme2WAtQ3j2RiOgIV7')
+    consumer_key=config.consumer_key,
+    consumer_secret=config.consumer_secret,
+    access_token_key=config.access_token_key,
+    access_token_secret=config.access_token_secret)
 
 def strip_html(input):
     output = re.sub('<[^<]+?>', '', input)

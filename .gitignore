@@ -3,4 +3,5 @@ venv
 .idea/
 .ipynb_checkpoints/
 tweeted-links.db
-
+config.py
+__pycache__
